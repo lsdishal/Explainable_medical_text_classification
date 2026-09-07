@@ -1,0 +1,62 @@
+project:
+  name: "Explainable Medical Text Classification"
+  version: "1.0.0"
+  seed: 42
+
+dataset:
+  hf_name: "NeuronZero/Symptom2Disease"
+  raw_path: "data/raw/symptom2disease.csv"
+  processed_dir: "data/processed"
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  text_column: "text"
+  label_column: "label"
+
+models:
+  primary:
+    name: "biobert"
+    hf_model_id: "dmis-lab/biobert-v1.1"
+    save_dir: "models/biobert"
+  baseline_bert:
+    name: "bert"
+    hf_model_id: "bert-base-uncased"
+    save_dir: "models/bert_baseline"
+  baseline_distilbert:
+    name: "distilbert"
+    hf_model_id: "distilbert-base-uncased"
+    save_dir: "models/distilbert"
+  best_model_dir: "models/best_model"
+  tokenizer_dir: "models/tokenizer"
+
+training:
+  max_length: 128
+  batch_size: 16
+  eval_batch_size: 32
+  learning_rate: 3.0e-5
+  weight_decay: 0.01
+  epochs: 5
+  warmup_ratio: 0.1
+  random_seed: 42
+  early_stopping_patience: 3
+  device: "auto" # auto detects mps, cuda, or cpu
+  save_best_model: true
+
+confidence_thresholds:
+  high: 0.90
+  moderate: 0.70
+
+explainability:
+  shap:
+    max_evals: 100
+  lime:
+    num_samples: 250
+    num_features: 10
+  captum:
+    n_steps: 25
+  top_n_attentions: 5
+
+paths:
+  figures_dir: "outputs/figures"
+  reports_dir: "outputs/reports"
+  predictions_dir: "outputs/predictions"

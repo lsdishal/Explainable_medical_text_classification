@@ -1,0 +1,30 @@
+# Sensitive Environment Variables & API Keys
+.env
+*.env
+
+# Large Binary Model Checkpoints (>100MB GitHub limit)
+models/biobert/
+models/bert_baseline/
+models/baseline_bert/
+models/baseline_distilbert/
+models/best_model/
+*.pt
+*.bin
+*.safetensors
+
+# Python Cache & Environment Files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+
+# Streamlit User Credentials & Local Config
+.streamlit/credentials.toml
+
+# OS System Files
+.DS_Store
+Thumbs.db

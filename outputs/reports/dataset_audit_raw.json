@@ -1,0 +1,153 @@
+{
+  "original_count": 1200,
+  "missing_label": 0,
+  "missing_text": 0,
+  "duplicates_removed": 47,
+  "invalid_labels_removed": 0,
+  "other_reasons_removed": 0,
+  "final_count": 1153,
+  "class_comparison": {
+    "Jaundice": {
+      "Raw_Count": 50,
+      "Clean_Count": 38,
+      "Removed_Duplicates": 12
+    },
+    "Dimorphic Hemorrhoids": {
+      "Raw_Count": 50,
+      "Clean_Count": 41,
+      "Removed_Duplicates": 9
+    },
+    "Malaria": {
+      "Raw_Count": 50,
+      "Clean_Count": 44,
+      "Removed_Duplicates": 6
+    },
+    "Arthritis": {
+      "Raw_Count": 50,
+      "Clean_Count": 46,
+      "Removed_Duplicates": 4
+    },
+    "Acne": {
+      "Raw_Count": 50,
+      "Clean_Count": 46,
+      "Removed_Duplicates": 4
+    },
+    "Pneumonia": {
+      "Raw_Count": 50,
+      "Clean_Count": 47,
+      "Removed_Duplicates": 3
+    },
+    "Migraine": {
+      "Raw_Count": 50,
+      "Clean_Count": 47,
+      "Removed_Duplicates": 3
+    },
+    "gastroesophageal reflux disease": {
+      "Raw_Count": 50,
+      "Clean_Count": 48,
+      "Removed_Duplicates": 2
+    },
+    "Cervical spondylosis": {
+      "Raw_Count": 50,
+      "Clean_Count": 49,
+      "Removed_Duplicates": 1
+    },
+    "Bronchial Asthma": {
+      "Raw_Count": 50,
+      "Clean_Count": 49,
+      "Removed_Duplicates": 1
+    },
+    "Common Cold": {
+      "Raw_Count": 50,
+      "Clean_Count": 49,
+      "Removed_Duplicates": 1
+    },
+    "Chicken pox": {
+      "Raw_Count": 50,
+      "Clean_Count": 49,
+      "Removed_Duplicates": 1
+    },
+    "Impetigo": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "Hypertension": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "Fungal infection": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "Dengue": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "Psoriasis": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "Typhoid": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "Varicose Veins": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "allergy": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "diabetes": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "drug reaction": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "peptic ulcer disease": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    },
+    "urinary tract infection": {
+      "Raw_Count": 50,
+      "Clean_Count": 50,
+      "Removed_Duplicates": 0
+    }
+  },
+  "sample_dupes": [
+    {
+      "label": "Chicken pox",
+      "text": "I'm feeling fatigued and have no energy. I can barely keep my eyes open during the day, and I've been feeling lethargic and unable to motivate myself."
+    },
+    {
+      "label": "Common Cold",
+      "text": "I've been quite exhausted and ill. My throat has been quite painful, and I've had a fairly nasty cough. I've got a lot of chills and a pretty high temperature. Just feeling extremely run down and weak"
+    },
+    {
+      "label": "Pneumonia",
+      "text": "I have a really high fever, and I have problems breathing. My heart is racing quite quickly, I'm perspiring a lot, and I feel chilly and exhausted. I'm also about to cough out some brownish phlegm."
+    },
+    {
+      "label": "Pneumonia",
+      "text": "I'm having a hard time breathing and I feel really uncomfortable. I'm sweating a lot and there's a lot of phlegm in my throat. My chest hurts and my heart is beating fast. The mucus I'm coughing up is brownish."
+    },
+    {
+      "label": "Pneumonia",
+      "text": "Lately I've been experiencing chills, fatigue, a cough, a high fever, and difficulty breathing. I've been sweating a lot and just feeling really sick and weak. I've also had some phlegm that's been really thick and dark."
+    }
+  ]
+}

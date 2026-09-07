@@ -1,0 +1,86 @@
+{
+  "dataset_name": "Symptom2Disease",
+  "total_cleaned_samples": 1153,
+  "num_classes": 24,
+  "classes": [
+    "Acne",
+    "Arthritis",
+    "Bronchial Asthma",
+    "Cervical spondylosis",
+    "Chicken pox",
+    "Common Cold",
+    "Dengue",
+    "Dimorphic Hemorrhoids",
+    "Fungal infection",
+    "Hypertension",
+    "Impetigo",
+    "Jaundice",
+    "Malaria",
+    "Migraine",
+    "Pneumonia",
+    "Psoriasis",
+    "Typhoid",
+    "Varicose Veins",
+    "allergy",
+    "diabetes",
+    "drug reaction",
+    "gastroesophageal reflux disease",
+    "peptic ulcer disease",
+    "urinary tract infection"
+  ],
+  "samples_per_class": {
+    "Psoriasis": 50,
+    "Varicose Veins": 50,
+    "peptic ulcer disease": 50,
+    "drug reaction": 50,
+    "allergy": 50,
+    "urinary tract infection": 50,
+    "Hypertension": 50,
+    "diabetes": 50,
+    "Fungal infection": 50,
+    "Dengue": 50,
+    "Impetigo": 50,
+    "Typhoid": 50,
+    "Common Cold": 49,
+    "Cervical spondylosis": 49,
+    "Chicken pox": 49,
+    "Bronchial Asthma": 49,
+    "gastroesophageal reflux disease": 48,
+    "Pneumonia": 47,
+    "Migraine": 47,
+    "Arthritis": 46,
+    "Acne": 46,
+    "Malaria": 44,
+    "Dimorphic Hemorrhoids": 41,
+    "Jaundice": 38
+  },
+  "splits": {
+    "train_samples": 921,
+    "val_samples": 116,
+    "test_samples": 116,
+    "train_ratio": 0.7987857762359063,
+    "val_ratio": 0.10060711188204684,
+    "test_ratio": 0.10060711188204684
+  },
+  "text_statistics": {
+    "char_length": {
+      "min": 59,
+      "max": 317,
+      "mean": 171.08673026886385,
+      "median": 169.0,
+      "std": 35.50243691475817
+    },
+    "word_count": {
+      "min": 12,
+      "max": 55,
+      "mean": 30.62532523850824,
+      "median": 30.0,
+      "std": 6.717652720671984
+    },
+    "outlier_counts": {
+      "total_outliers": 0,
+      "unusually_short": 0,
+      "unusually_long": 0
+    }
+  }
+}

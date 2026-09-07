@@ -1,0 +1,460 @@
+{
+  "metrics": {
+    "accuracy": 0.9051724137931034,
+    "macro_p": 0.9340277777777777,
+    "macro_r": 0.9083333333333332,
+    "macro_f1": 0.901494338994339,
+    "weighted_f1": 0.8980975920631094
+  },
+  "per_class": [
+    {
+      "Disease": "Acne",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 4
+    },
+    {
+      "Disease": "Impetigo",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Varicose Veins",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Psoriasis",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Pneumonia",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Migraine",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Arthritis",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Jaundice",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 4
+    },
+    {
+      "Disease": "Malaria",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 4
+    },
+    {
+      "Disease": "Dimorphic Hemorrhoids",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 4
+    },
+    {
+      "Disease": "Common Cold",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Cervical spondylosis",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Bronchial Asthma",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "urinary tract infection",
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "Support": 5
+    },
+    {
+      "Disease": "Hypertension",
+      "Precision": 0.8333333333333334,
+      "Recall": 1.0,
+      "F1": 0.9090909090909091,
+      "Support": 5
+    },
+    {
+      "Disease": "Fungal infection",
+      "Precision": 0.8333333333333334,
+      "Recall": 1.0,
+      "F1": 0.9090909090909091,
+      "Support": 5
+    },
+    {
+      "Disease": "Typhoid",
+      "Precision": 0.8333333333333334,
+      "Recall": 1.0,
+      "F1": 0.9090909090909091,
+      "Support": 5
+    },
+    {
+      "Disease": "allergy",
+      "Precision": 0.625,
+      "Recall": 1.0,
+      "F1": 0.7692307692307693,
+      "Support": 5
+    },
+    {
+      "Disease": "gastroesophageal reflux disease",
+      "Precision": 0.625,
+      "Recall": 1.0,
+      "F1": 0.7692307692307693,
+      "Support": 5
+    },
+    {
+      "Disease": "diabetes",
+      "Precision": 1.0,
+      "Recall": 0.6,
+      "F1": 0.75,
+      "Support": 5
+    },
+    {
+      "Disease": "drug reaction",
+      "Precision": 1.0,
+      "Recall": 0.6,
+      "F1": 0.75,
+      "Support": 5
+    },
+    {
+      "Disease": "Chicken pox",
+      "Precision": 0.6666666666666666,
+      "Recall": 0.8,
+      "F1": 0.7272727272727273,
+      "Support": 5
+    },
+    {
+      "Disease": "Dengue",
+      "Precision": 1.0,
+      "Recall": 0.4,
+      "F1": 0.5714285714285714,
+      "Support": 5
+    },
+    {
+      "Disease": "peptic ulcer disease",
+      "Precision": 1.0,
+      "Recall": 0.4,
+      "F1": 0.5714285714285714,
+      "Support": 5
+    }
+  ],
+  "top_confused": [
+    {
+      "true": "peptic ulcer disease",
+      "pred": "gastroesophageal reflux disease",
+      "count": 3
+    },
+    {
+      "true": "Dengue",
+      "pred": "Chicken pox",
+      "count": 2
+    },
+    {
+      "true": "drug reaction",
+      "pred": "allergy",
+      "count": 2
+    },
+    {
+      "true": "Chicken pox",
+      "pred": "Hypertension",
+      "count": 1
+    },
+    {
+      "true": "Dengue",
+      "pred": "Typhoid",
+      "count": 1
+    },
+    {
+      "true": "diabetes",
+      "pred": "Fungal infection",
+      "count": 1
+    },
+    {
+      "true": "diabetes",
+      "pred": "allergy",
+      "count": 1
+    }
+  ],
+  "manual_results": [
+    {
+      "name": "Ex 1",
+      "text": "I have a severe headache with nausea and sensitivity to light.",
+      "pred": "Dengue",
+      "conf": 0.1312415599822998,
+      "top3": [
+        {
+          "class_id": 6,
+          "disease": "Dengue",
+          "confidence": 0.1312415599822998,
+          "confidence_percentage": "13.12%"
+        },
+        {
+          "class_id": 12,
+          "disease": "Malaria",
+          "confidence": 0.10386373847723007,
+          "confidence_percentage": "10.39%"
+        },
+        {
+          "class_id": 9,
+          "disease": "Hypertension",
+          "confidence": 0.10115440934896469,
+          "confidence_percentage": "10.12%"
+        }
+      ],
+      "probable_clinical": "Migraine",
+      "train_sim_score": 0.8181818181818182,
+      "closest_train_text": "I've been experiencing severe body itchiness, along with chills and nausea. I've...",
+      "consistent_tokens": [
+        "headache",
+        "severe",
+        "light"
+      ]
+    },
+    {
+      "name": "Ex 2",
+      "text": "I have a red itchy rash with dry scaly patches.",
+      "pred": "Fungal infection",
+      "conf": 0.2470897138118744,
+      "top3": [
+        {
+          "class_id": 8,
+          "disease": "Fungal infection",
+          "confidence": 0.2470897138118744,
+          "confidence_percentage": "24.71%"
+        },
+        {
+          "class_id": 15,
+          "disease": "Psoriasis",
+          "confidence": 0.14285334944725037,
+          "confidence_percentage": "14.29%"
+        },
+        {
+          "class_id": 4,
+          "disease": "Chicken pox",
+          "confidence": 0.10431988537311554,
+          "confidence_percentage": "10.43%"
+        }
+      ],
+      "probable_clinical": "Psoriasis / Fungal infection",
+      "train_sim_score": 0.9,
+      "closest_train_text": "I have been experiencing a skin rash on my arms, legs, and torso for the past fe...",
+      "consistent_tokens": [
+        "patches",
+        "red",
+        "have",
+        "a",
+        "dry",
+        "with",
+        "r",
+        "cal",
+        "ash",
+        "y"
+      ]
+    },
+    {
+      "name": "Ex 3",
+      "text": "I have a cough, sore throat and runny nose.",
+      "pred": "allergy",
+      "conf": 0.37239840626716614,
+      "top3": [
+        {
+          "class_id": 18,
+          "disease": "allergy",
+          "confidence": 0.37239840626716614,
+          "confidence_percentage": "37.24%"
+        },
+        {
+          "class_id": 21,
+          "disease": "gastroesophageal reflux disease",
+          "confidence": 0.1199500635266304,
+          "confidence_percentage": "12.00%"
+        },
+        {
+          "class_id": 22,
+          "disease": "peptic ulcer disease",
+          "confidence": 0.06102422624826431,
+          "confidence_percentage": "6.10%"
+        }
+      ],
+      "probable_clinical": "Common Cold / Allergy",
+      "train_sim_score": 0.7777777777777778,
+      "closest_train_text": "I've been losing my appetite and having trouble swallowing. My nose has been run...",
+      "consistent_tokens": [
+        "nose",
+        "cough",
+        "have",
+        "sore",
+        "i",
+        "run",
+        "throat"
+      ]
+    },
+    {
+      "name": "Ex 4",
+      "text": "no fever but persistent cough",
+      "pred": "urinary tract infection",
+      "conf": 0.10550941526889801,
+      "top3": [
+        {
+          "class_id": 23,
+          "disease": "urinary tract infection",
+          "confidence": 0.10550941526889801,
+          "confidence_percentage": "10.55%"
+        },
+        {
+          "class_id": 16,
+          "disease": "Typhoid",
+          "confidence": 0.07656702399253845,
+          "confidence_percentage": "7.66%"
+        },
+        {
+          "class_id": 20,
+          "disease": "drug reaction",
+          "confidence": 0.05920535698533058,
+          "confidence_percentage": "5.92%"
+        }
+      ],
+      "probable_clinical": "GERD / Asthma / Cold",
+      "train_sim_score": 0.6,
+      "closest_train_text": "I've been feeling really ill lately. I've had this persistent cough and difficul...",
+      "consistent_tokens": [
+        "cough",
+        "but"
+      ]
+    },
+    {
+      "name": "Ex 5",
+      "text": "fever",
+      "pred": "urinary tract infection",
+      "conf": 0.08645747601985931,
+      "top3": [
+        {
+          "class_id": 23,
+          "disease": "urinary tract infection",
+          "confidence": 0.08645747601985931,
+          "confidence_percentage": "8.65%"
+        },
+        {
+          "class_id": 16,
+          "disease": "Typhoid",
+          "confidence": 0.06923424452543259,
+          "confidence_percentage": "6.92%"
+        },
+        {
+          "class_id": 9,
+          "disease": "Hypertension",
+          "confidence": 0.06544899940490723,
+          "confidence_percentage": "6.54%"
+        }
+      ],
+      "probable_clinical": "Ambiguous / Multiple",
+      "train_sim_score": 1.0,
+      "closest_train_text": "I have a high fever, chills, and severe itching. In addition, I have a headache ...",
+      "consistent_tokens": [
+        "fever"
+      ]
+    }
+  ],
+  "train_inspect_samples": {
+    "Migraine": [
+      "Along with excessive appetite, a stiff neck, depression, impatience, and visual disturbance, I've also been having indigestion, headaches, blurred vision, and acid reflux. These symptoms have been bothering me and interfering with my usual activities.",
+      "Along with impaired seeing, excessive eating, a sore neck, melancholy, impatience, and constant headaches, I've also been fighting heartburn, acid reflux, and indigestion.",
+      "Stomach acid, indigestion, frequent headaches, hazy and distorted vision, increased appetite, stiff neck, depression, irritation, and visual distortion have all been bothering me.",
+      "Along with recurrent headaches and blurred vision, I suffer acid reflux and trouble digesting my food.",
+      "Along with excessive appetite, a stiff neck, depression, impatience, and visual disturbance, I've also been suffering indigestion, headaches, blurred vision, and stomach problems."
+    ],
+    "Dengue": [
+      "My shivers and shivering have been accompanied with a sensation of coldness and a very high fever. Rashes on my arms and red patches on my neck have also appeared.",
+      "I am experiencing very high fever and chills every night. It is really concerning me. Moreover, I don\u2019t feel like eating anything and my back, arms, legs pain a lot. There is a strange pain behing my eyes. I can\u2019t do any physical activities.",
+      "I have been vomiting frequently and have lost my appetite as a result. There are rashes on my skin and my eyes pain, because of which I cannot sleep properly.",
+      "My joints and back pain everyday. I feel like vomitting and this has made me very weak. Because of my body pain, I am not able to focus on my work and don\u2019t feel like doing anything.",
+      "The headache I have been experiencing is severe and is accompanied by a feeling of pressure in my head. I have mild fever along with headache. There are small red spots on my back."
+    ],
+    "Fungal infection": [
+      "My skin frequently develops itchy bumps that can occasionally turn red or rough. Aside from that, my skin occasionally develops strange pimples that resemble small balls and some odd spots that are a different hue from the rest of my skin.",
+      "All over my body has been itching like crazy, and now there are red areas all over. Additionally, some of the patches have a different tone than my natural skin. And on my skin, there are these lumps or pimples that have developed.",
+      "I have a rash all over my body, and I can't stop scratching because my skin is itchy. My skin also has a few spots where the hue is altered and some lumps and knot-like pimples.",
+      "My body has been itching terribly all over, and there are now red spots everywhere. Some of the patches also differ in tone from my natural complexion. And there are these lumps or pimples that have appeared on my skin.",
+      "There are now red blotches all over my body where I have been itching horribly all over. A few of the patches also differ in complexion from my natural skin. And these lumps or bumps have developed on my skin."
+    ],
+    "Psoriasis": [
+      "There is a silver like dusting on my skin, especially on my lower back and scalp. This dusting is made up of small scales that flake off easily when I scratch them.",
+      "I've had trouble sleeping because of the itching and pain produced by the rash. My nails have little dents, which is really alarming. Moreover, my joints pain everyday and I have no idea what is causing it.",
+      "Because of dry, flaky areas on my skin, I am prone to infections. My joints are in extreme pain . My knees and elbows' skin are starting to peel off.",
+      "My skin has a silvery layer over it, especially on my back and arms. This dusting is made up of small scales that peel off readily when rubbed. Also, there are rashes all over my body.",
+      "My arms, face and back are all red and irritated. It is frequently irritating and unpleasant. My nails have a strange inflammation and have developed small dents. I have never seen anything like this."
+    ],
+    "allergy": [
+      "I have nasal congestion and a blocked nose. On occasion, during the night, I have stiffness and chest pain. Additionally, I've lost my senses of taste and smell.",
+      "I have a plugged nose and nasal congestion. I occasionally have stiffness and chest discomfort during the night. I've also lost my ability to smell and taste.",
+      "I have itchy and red skin. Sometimes these result in flaking. My face and lips puff up and causes a lot of inconvinience. I get watery eyes sometimes and headches when the puffing gets severe",
+      "I hace difficulty in breething and shortness of breath. I cough uncontrollably and get itchy eyes and swelling on my face and other body parts",
+      "I frequently have exhaustion, a terrible taste in my mouth, and throat itchiness. My muscles are also burning and uncomfortable. Sometimes I have cramps all throughout my body."
+    ],
+    "urinary tract infection": [
+      "I been having very low temperatues and a very foul smelling pee. The area near my kidneys hurt a lot and I cant seem to hold my pee. I often get these uncontrollable urges",
+      "I have to go to the bathroom a lot, but generally only a few drops of urine come out. I have severe stomach pains and an overwhelming want to urinate.",
+      "I get blood in my pee sometimes and sometimes get nauseous whie peeing. I also have a bad smell in my pee and sometimes get high temperatures at nights, help me",
+      "I have to constantly to go the bathroom to relieve myself, but cant seem to empty my bladder. I get these very strong and uncontrollable urges to pee and sometimes get dark or bloody pee",
+      "My stomach hurts, and I frequently acquire a temperature. I experience sudden, intense cravings to urinate. The discomfort is virtually always there and frequently gets worse at night. My pee nearly always smells bad."
+    ],
+    "Typhoid": [
+      "I've been experiencing chills, fever, and extreme stomach discomfort. I've been generally unhappy, and I can't seem to get rid of these symptoms.",
+      "Because of the vomiting and diarrhea, I've been having a lot of difficulties staying hydrated. There is a mild fever, too, as well as stomach pain.",
+      "I've been having a lot of difficulty breathing, and I feel like I'm constantly nauseous. I also have mild belly pain. It's been terrifying at times.",
+      "I am having a lot of trouble sleeping because of the high fever and the headache. Moreover, I have constant belly pain, because of which I can't go to work.",
+      "I have been getting a headache for the past week that has been growing worse. It has been accompanied by stomach pains, constipation, and diarrhea. I don't know what is happening and I am really worried about it."
+    ],
+    "Hypertension": [
+      "Along with a chest pain and dizziness, I've had a headache that seems like a sharp pain in my forehead.",
+      "Headache, chest discomfort, dizziness, lack of balance, and difficulty concentrating are some of the symptoms I've been having.",
+      "I woke up this morning with a headache and chest pain, and as the day has gone on, I've also been feeling dizzy and unsteady on my feet",
+      "I've been experiencing balance issues along with feeling dizzy and lightheaded. Additionally, I've seen a drop in my concentration and focus.",
+      "I have been feeling fine all day, but suddenly developed a headache, chest pain, and dizziness while out for a run. It's been hard for me to maintain my balance since then"
+    ]
+  },
+  "confidence_stats": {
+    "correct_mean": 0.466441572422073,
+    "correct_median": 0.4692540466785431,
+    "incorrect_mean": 0.2027942958203229,
+    "incorrect_median": 0.18511320650577545
+  }
+}

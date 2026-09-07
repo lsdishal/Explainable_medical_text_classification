@@ -1,0 +1,60 @@
+{
+  "total_samples": 116,
+  "correct_count": 106,
+  "incorrect_count": 10,
+  "accuracy_pct": 91.37931034482759,
+  "top_confused_class_pairs": [
+    {
+      "ground_truth": "drug reaction",
+      "predicted_as": "diabetes",
+      "error_count": 3
+    },
+    {
+      "ground_truth": "Dengue",
+      "predicted_as": "Malaria",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "gastroesophageal reflux disease",
+      "predicted_as": "allergy",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "drug reaction",
+      "predicted_as": "Psoriasis",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "gastroesophageal reflux disease",
+      "predicted_as": "peptic ulcer disease",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "diabetes",
+      "predicted_as": "Psoriasis",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "peptic ulcer disease",
+      "predicted_as": "gastroesophageal reflux disease",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "Chicken pox",
+      "predicted_as": "Hypertension",
+      "error_count": 1
+    }
+  ],
+  "confidence_stats": {
+    "correct_predictions": {
+      "mean_confidence": 0.4393001411039874,
+      "median_confidence": 0.43067261576652527,
+      "std_confidence": 0.13418008898801567
+    },
+    "incorrect_predictions": {
+      "mean_confidence": 0.2400184690952301,
+      "median_confidence": 0.2401038259267807,
+      "std_confidence": 0.04905775095601751
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "total_samples": 116,
+  "correct_count": 105,
+  "incorrect_count": 11,
+  "accuracy_pct": 90.51724137931035,
+  "top_confused_class_pairs": [
+    {
+      "ground_truth": "peptic ulcer disease",
+      "predicted_as": "gastroesophageal reflux disease",
+      "error_count": 3
+    },
+    {
+      "ground_truth": "drug reaction",
+      "predicted_as": "allergy",
+      "error_count": 2
+    },
+    {
+      "ground_truth": "Dengue",
+      "predicted_as": "Chicken pox",
+      "error_count": 2
+    },
+    {
+      "ground_truth": "Dengue",
+      "predicted_as": "Typhoid",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "diabetes",
+      "predicted_as": "Fungal infection",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "Chicken pox",
+      "predicted_as": "Hypertension",
+      "error_count": 1
+    },
+    {
+      "ground_truth": "diabetes",
+      "predicted_as": "allergy",
+      "error_count": 1
+    }
+  ],
+  "confidence_stats": {
+    "correct_predictions": {
+      "mean_confidence": 0.4664416023663112,
+      "median_confidence": 0.4692540168762207,
+      "std_confidence": 0.15690252043060027
+    },
+    "incorrect_predictions": {
+      "mean_confidence": 0.20279434865171259,
+      "median_confidence": 0.18511316180229187,
+      "std_confidence": 0.05623013324267823
+    }
+  }
+}
