@@ -2,11 +2,11 @@
   {
     "Model": "BIOBERT",
     "Hugging Face Model ID": "dmis-lab/biobert-v1.1",
-    "Accuracy": 0.9051724137931034,
-    "Precision": 0.9340277777777777,
-    "Recall": 0.9083333333333332,
-    "Macro F1": 0.901494338994339,
-    "Weighted F1": 0.8980975920631094
+    "Accuracy": 0.8017241379310345,
+    "Precision": 0.8134424603174603,
+    "Recall": 0.8083333333333332,
+    "Macro F1": 0.7865937303437303,
+    "Weighted F1": 0.7792348934590314
   },
   {
     "Model": "BERT",

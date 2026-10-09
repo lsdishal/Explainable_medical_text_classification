@@ -87,10 +87,33 @@ html, body, [class*="css"] {
   background: transparent !important;
 }
 
-/* ── HIDE DEFAULT STREAMLIT CHROME ──────────────────────────────── */
-#MainMenu, footer, header { visibility: hidden !important; }
+/* ── STREAMLIT CHROME & HEADER STYLING ────────────────────────────── */
+#MainMenu, footer { display: none !important; }
 [data-testid="stDecoration"] { display: none !important; }
 [data-testid="stToolbar"] { display: none !important; }
+
+/* Keep header background transparent so background gradient shows through */
+header[data-testid="stHeader"],
+[data-testid="stHeader"] {
+  background: transparent !important;
+}
+
+/* Color native Streamlit sidebar collapse (<<) & expand (>>) controls in healthcare green */
+[data-testid="stSidebarCollapseButton"] button,
+[data-testid="stSidebarCollapsedControl"] button,
+[data-testid="collapsedControl"] button,
+[data-testid="stHeader"] button {
+  color: #1b5e20 !important;
+}
+
+[data-testid="stSidebarCollapseButton"] svg,
+[data-testid="stSidebarCollapsedControl"] svg,
+[data-testid="collapsedControl"] svg,
+[data-testid="stHeader"] button svg {
+  fill: #1b5e20 !important;
+  color: #1b5e20 !important;
+  stroke: #1b5e20 !important;
+}
 
 /* ── SIDEBAR STYLES ──────────────────────────────────────────────── */
 [data-testid="stSidebar"] .stMarkdown h3 {

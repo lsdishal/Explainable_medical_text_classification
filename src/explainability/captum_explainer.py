@@ -34,23 +34,32 @@ class CaptumExplainer:
 
     def explain(self, text: str, target_class: int, n_steps: int = 25) -> List[Tuple[str, float]]:
         """Calculates Integrated Gradients attributions for tokens in input text."""
-        self.model.eval()
-        self.model.zero_grad()
+        eval_device = torch.device("cpu") if self.device.type == "mps" else self.device
+        orig_device = next(self.model.parameters()).device
+        if eval_device != orig_device:
+            self.model.to(eval_device)
 
-        inputs = self.tokenizer(text, return_tensors="pt", max_length=128, truncation=True)
-        input_ids = inputs["input_ids"].to(self.device)
-        attention_mask = inputs["attention_mask"].to(self.device)
+        try:
+            self.model.eval()
+            self.model.zero_grad()
 
-        tokens = self.tokenizer.convert_ids_to_tokens(input_ids[0])
+            inputs = self.tokenizer(text, return_tensors="pt", max_length=128, truncation=True)
+            input_ids = inputs["input_ids"].to(eval_device)
+            attention_mask = inputs["attention_mask"].to(eval_device)
 
-        # Compute Integrated Gradients
-        attributions, delta = self.lig.attribute(
-            inputs=input_ids,
-            target=target_class,
-            additional_forward_args=(attention_mask,),
-            n_steps=n_steps,
-            return_convergence_delta=True
-        )
+            tokens = self.tokenizer.convert_ids_to_tokens(input_ids[0])
+
+            # Compute Integrated Gradients
+            attributions, delta = self.lig.attribute(
+                inputs=input_ids,
+                target=target_class,
+                additional_forward_args=(attention_mask,),
+                n_steps=n_steps,
+                return_convergence_delta=True
+            )
+        finally:
+            if eval_device != orig_device:
+                self.model.to(orig_device)
 
         # Sum over embedding dimensions
         attributions = attributions.sum(dim=-1).squeeze(0).cpu().detach().numpy()

@@ -6,7 +6,7 @@ from src.reliability.safety import SafetyGuardrail, LOW_CONFIDENCE_WARNING_TEXT
 
 def test_pipeline_config_and_paths():
     cfg = get_config()
-    assert cfg.project.title == "Explainable Medical Text Classification"
+    assert cfg.project.name == "Explainable Medical Text Classification"
     assert Path("data/raw").exists()
     assert Path("data/processed").exists()
 

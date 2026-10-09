@@ -9,6 +9,7 @@ if str(root_dir) not in sys.path:
 
 from app.components.theme import apply_theme
 from app.components.header import render_header
+from app.components.sidebar import render_sidebar
 from app.components.footer import render_footer
 from app.components.cards import feature_card
 
@@ -20,6 +21,7 @@ st.set_page_config(
 )
 apply_theme()
 render_header()
+render_sidebar()
 
 # ── Hero ──────────────────────────────────────────────────────────────────────
 st.markdown("""

@@ -16,10 +16,16 @@ class CaptumIGExplainer:
         try:
             from captum.attr import IntegratedGradients
 
+            # Use CPU for Integrated Gradients if MPS is active to prevent PyTorch MPS command buffer assertions
+            eval_device = torch.device("cpu") if self.device.type == "mps" else self.device
+            orig_device = next(self.model.parameters()).device
+            if eval_device != orig_device:
+                self.model.to(eval_device)
+
             self.model.eval()
             inputs = self.tokenizer(text, return_tensors="pt", max_length=128, truncation=True)
-            input_ids = inputs["input_ids"].to(self.device)
-            attention_mask = inputs["attention_mask"].to(self.device)
+            input_ids = inputs["input_ids"].to(eval_device)
+            attention_mask = inputs["attention_mask"].to(eval_device)
 
             tokens = self.tokenizer.convert_ids_to_tokens(input_ids[0])
 
@@ -61,12 +67,16 @@ class CaptumIGExplainer:
                     clean_tok = tok.replace("##", "")
                     token_scores.append((clean_tok, float(score)))
 
-            return {
+            res = {
                 "method": "Captum Integrated Gradients",
                 "token_scores": token_scores,
                 "convergence_delta": float(delta.squeeze(0).cpu().detach().numpy()) if hasattr(delta, "squeeze") else 0.0
             }
+            return res
         except Exception as e:
             logger.warning(f"Integrated Gradients calculation failed: {e}")
             return {"error": f"Integrated Gradients calculation unavailable: {str(e)}"}
+        finally:
+            if 'eval_device' in locals() and 'orig_device' in locals() and eval_device != orig_device:
+                self.model.to(orig_device)
 

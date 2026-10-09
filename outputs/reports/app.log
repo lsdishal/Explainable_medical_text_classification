@@ -503,3 +503,108 @@
 [2026-09-08 00:20:36] [INFO] [load_dataset.py:57] - Loading raw dataset from local file: data/raw/symptom2disease.csv
 [2026-09-08 00:20:36] [INFO] [load_dataset.py:81] - Removing index columns: ['Unnamed: 0']
 [2026-09-08 00:20:36] [INFO] [load_dataset.py:112] - Dataset loaded successfully. Total Rows: 1200 | Missing Rows: 0 | Duplicate Rows: 47
+[2026-09-08 00:34:38] [INFO] [dataset_preparation.py:29] - === Starting Dataset Preprocessing & Cleaning Pipeline ===
+[2026-09-08 00:34:38] [INFO] [load_dataset.py:57] - Loading raw dataset from local file: data/raw/symptom2disease.csv
+[2026-09-08 00:34:38] [INFO] [load_dataset.py:81] - Removing index columns: ['Unnamed: 0']
+[2026-09-08 00:34:38] [INFO] [load_dataset.py:112] - Dataset loaded successfully. Total Rows: 1200 | Missing Rows: 0 | Duplicate Rows: 47
+[2026-09-08 00:34:38] [INFO] [dataset_preparation.py:54] - Cleaning complete: Original=1200 | Missing Removed=0 | Duplicates Removed=47 | Cleaned Count=1153
+[2026-09-08 00:34:38] [INFO] [label_encoder.py:20] - Fitted LabelEncoder on 24 unique disease classes.
+[2026-09-08 00:34:38] [INFO] [label_encoder.py:51] - Saved label mapping to 'data/processed/label_mapping.json'
+[2026-09-08 00:34:39] [INFO] [dataset_preparation.py:171] - Preprocessing pipeline finished successfully. All datasets, statistics, and figures exported.
+[2026-09-08 00:42:18] [INFO] [load_dataset.py:57] - Loading raw dataset from local file: data/raw/symptom2disease.csv
+[2026-09-08 00:42:18] [INFO] [load_dataset.py:81] - Removing index columns: ['Unnamed: 0']
+[2026-09-08 00:42:18] [INFO] [load_dataset.py:112] - Dataset loaded successfully. Total Rows: 1200 | Missing Rows: 0 | Duplicate Rows: 47
+[2026-09-08 00:42:36] [INFO] [dataset_preparation.py:29] - === Starting Dataset Preprocessing & Cleaning Pipeline ===
+[2026-09-08 00:42:36] [INFO] [load_dataset.py:57] - Loading raw dataset from local file: data/raw/symptom2disease.csv
+[2026-09-08 00:42:36] [INFO] [load_dataset.py:81] - Removing index columns: ['Unnamed: 0']
+[2026-09-08 00:42:36] [INFO] [load_dataset.py:112] - Dataset loaded successfully. Total Rows: 1200 | Missing Rows: 0 | Duplicate Rows: 47
+[2026-09-08 00:42:36] [INFO] [dataset_preparation.py:54] - Cleaning complete: Original=1200 | Missing Removed=0 | Duplicates Removed=47 | Cleaned Count=1153
+[2026-09-08 00:42:36] [INFO] [label_encoder.py:20] - Fitted LabelEncoder on 24 unique disease classes.
+[2026-09-08 00:42:36] [INFO] [label_encoder.py:51] - Saved label mapping to 'data/processed/label_mapping.json'
+[2026-09-08 00:42:37] [INFO] [dataset_preparation.py:171] - Preprocessing pipeline finished successfully. All datasets, statistics, and figures exported.
+[2026-09-08 00:43:17] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 00:43:17] [INFO] [evaluate.py:48] - === Evaluating Model: BIOBERT on Test Set ===
+[2026-09-08 00:43:21] [INFO] [error_analysis.py:83] - Error analysis completed: Correct=105/116 | Incorrect=11 | Top Confused Pair: {'ground_truth': 'peptic ulcer disease', 'predicted_as': 'gastroesophageal reflux disease', 'error_count': 3}
+[2026-09-08 00:43:21] [INFO] [visualizations.py:31] - Saved confusion matrix figure to 'outputs/figures/confusion_matrix_biobert.png'
+[2026-09-08 00:43:22] [INFO] [visualizations.py:64] - Saved per-class metrics figure to 'outputs/figures/per_class_metrics_biobert.png'
+[2026-09-08 00:43:22] [INFO] [visualizations.py:94] - Saved confidence distribution figure to 'outputs/figures/confidence_distribution_biobert.png'
+[2026-09-08 00:43:22] [INFO] [evaluate.py:149] - Model 'BIOBERT' Test Results | Acc: 0.9052 | Macro F1: 0.9015 | Weighted F1: 0.8981
+[2026-09-08 00:43:22] [INFO] [visualizations.py:126] - Saved model comparison figure to 'outputs/figures/model_comparison.png'
+[2026-09-08 00:43:22] [INFO] [evaluate.py:193] - Saved model comparison table to 'outputs/reports/model_comparison.csv'
+[2026-09-08 00:45:37] [INFO] [model_loader.py:22] - Random seed set to: 42
+[2026-09-08 00:45:37] [INFO] [model_loader.py:22] - Random seed set to: 42
+[2026-09-08 00:45:37] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 00:45:37] [INFO] [model_loader.py:73] - Loading pretrained tokenizer & model: 'dmis-lab/biobert-v1.1' for 24 disease classes...
+[2026-09-08 00:45:38] [INFO] [model_loader.py:84] - Successfully loaded 'dmis-lab/biobert-v1.1' onto device 'mps'
+[2026-09-08 00:45:38] [INFO] [trainer.py:131] - === Starting Training (BIOBERT) | Total Epochs: 3 | Device: mps ===
+[2026-09-08 00:46:21] [INFO] [trainer.py:199] - Epoch 1/3 | Train Loss: 3.0517 | Val Loss: 2.6078 | Val Acc: 0.3793 | Val Macro F1: 0.3076 | Val Weighted F1: 0.3105
+[2026-09-08 00:46:23] [INFO] [trainer.py:217] - 🔥 Validation Macro F1 improved (0.0000 -> 0.3076). Saving best checkpoint...
+[2026-09-08 00:47:01] [INFO] [trainer.py:199] - Epoch 2/3 | Train Loss: 2.2925 | Val Loss: 1.8918 | Val Acc: 0.7069 | Val Macro F1: 0.6862 | Val Weighted F1: 0.6817
+[2026-09-08 00:47:03] [INFO] [trainer.py:217] - 🔥 Validation Macro F1 improved (0.3076 -> 0.6862). Saving best checkpoint...
+[2026-09-08 00:47:21] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 00:47:21] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-08 00:47:22] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 00:47:22] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-08 00:47:23] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'dyssentry , unable to eat food . hate girls...' [Class: gastroesophageal reflux disease]
+[2026-09-08 00:47:41] [INFO] [trainer.py:199] - Epoch 3/3 | Train Loss: 1.8073 | Val Loss: 1.6657 | Val Acc: 0.8276 | Val Macro F1: 0.8251 | Val Weighted F1: 0.8210
+[2026-09-08 00:47:44] [INFO] [trainer.py:217] - 🔥 Validation Macro F1 improved (0.6862 -> 0.8251). Saving best checkpoint...
+[2026-09-08 00:47:44] [INFO] [trainer.py:258] - Training completed for 'biobert'. Best Val Macro F1: 0.8251
+[2026-09-08 00:47:45] [INFO] [train.py:58] - Saved training curve figure to 'outputs/figures/training_curves_biobert.png'
+[2026-09-08 00:48:11] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 00:48:11] [INFO] [evaluate.py:48] - === Evaluating Model: BIOBERT on Test Set ===
+[2026-09-08 00:48:14] [INFO] [error_analysis.py:83] - Error analysis completed: Correct=93/116 | Incorrect=23 | Top Confused Pair: {'ground_truth': 'peptic ulcer disease', 'predicted_as': 'gastroesophageal reflux disease', 'error_count': 5}
+[2026-09-08 00:48:15] [INFO] [visualizations.py:31] - Saved confusion matrix figure to 'outputs/figures/confusion_matrix_biobert.png'
+[2026-09-08 00:48:15] [INFO] [visualizations.py:64] - Saved per-class metrics figure to 'outputs/figures/per_class_metrics_biobert.png'
+[2026-09-08 00:48:15] [INFO] [visualizations.py:94] - Saved confidence distribution figure to 'outputs/figures/confidence_distribution_biobert.png'
+[2026-09-08 00:48:15] [INFO] [evaluate.py:149] - Model 'BIOBERT' Test Results | Acc: 0.8017 | Macro F1: 0.7866 | Weighted F1: 0.7792
+[2026-09-08 00:48:16] [INFO] [visualizations.py:126] - Saved model comparison figure to 'outputs/figures/model_comparison.png'
+[2026-09-08 00:48:16] [INFO] [evaluate.py:193] - Saved model comparison table to 'outputs/reports/model_comparison.csv'
+[2026-09-08 00:50:31] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 00:50:31] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-08 00:50:32] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'High fever with intense shivering chills, sweating...' [Class: Malaria]
+[2026-09-08 00:51:19] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 00:51:19] [INFO] [predict.py:37] - Initializing inference engine from model 'models/bert_baseline' and tokenizer 'models/tokenizer'...
+[2026-09-08 00:51:19] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'High fever with intense shivering chills, sweating...' [Class: peptic ulcer disease]
+[2026-09-08 01:00:44] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 01:00:44] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-08 01:00:44] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-08 01:00:44] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 09:56:35] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 09:56:35] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 09:56:38] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'High fever, chills, persistent cough with yellowis...' [Class: Malaria]
+[2026-09-09 09:57:30] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 09:57:30] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 09:57:30] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'High fever, chills, persistent cough with yellowis...' [Class: Malaria]
+[2026-09-09 10:01:56] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:01:56] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:01:57] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'feeling vomiting seansation .. next pain and body ...' [Class: Dengue]
+[2026-09-09 10:03:59] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:03:59] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:04:00] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'Recurring fever , constipation , body ache ...' [Class: urinary tract infection]
+[2026-09-09 10:04:00] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:04:00] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:04:00] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'Recurring fever , constipation , body ache ...' [Class: urinary tract infection]
+[2026-09-09 10:19:47] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:19:47] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:19:50] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'High fever, chills, persistent cough with yellowis...' [Class: Malaria]
+[2026-09-09 10:20:31] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:20:31] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:20:32] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'i have vomiting, body pain , feelings so tired and...' [Class: Typhoid]
+[2026-09-09 10:22:57] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:22:57] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:22:58] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'i have vomiting, body pain , feelings so tired and...' [Class: Typhoid]
+[2026-09-09 10:24:01] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:24:01] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:24:02] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'High fever, chills, persistent cough with yellowis...' [Class: Malaria]
+[2026-09-09 10:24:46] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:24:46] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:24:46] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'High fever, chills, persistent cough with yellowis...' [Class: Malaria]
+[2026-09-09 10:24:56] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:24:56] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:24:57] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'I have a skin rash on my arms and legs with red sc...' [Class: Psoriasis]
+[2026-09-09 10:25:04] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:25:04] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:25:05] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'I have a severe headache with nausea, vomiting, an...' [Class: Hypertension]
+[2026-09-09 10:25:33] [INFO] [model_loader.py:32] - Apple Silicon MPS GPU detected.
+[2026-09-09 10:25:33] [INFO] [predict.py:37] - Initializing inference engine from model 'models/biobert' and tokenizer 'models/tokenizer'...
+[2026-09-09 10:25:33] [INFO] [explanation_manager.py:50] - Generating XAI explanations for text: 'feeling so tired.. vomiting sensation.. having bod...' [Class: peptic ulcer disease]
